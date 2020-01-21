@@ -1,0 +1,50 @@
+/* Body */
+
+body {
+    background-image: url(/assets/img/mountains.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    z-index: 10;
+}
+
+/* Navigation Bar*/
+
+.nav-bar {
+    background-color: black;
+    height: 80px;
+    display: inline-block;
+    width: 100%;
+    z-index: 100;
+    position:fixed;
+    top: 0;
+}
+.nav-list {
+    list-style-type: none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 45px;
+    margin-top: 20px;
+    font-family: heebo;
+}
+.nav-list a {
+    color: #fff;;
+}
+.logo {
+    
+    width: 
+}
+.logo-image {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #fff;
+  font-family: heebo;
+}
+
+/* Content */
