@@ -8,7 +8,6 @@ body {
     width: 100%;
     height: 800px;
     z-index: 10;
-
 }
 
 /* Navigation Bar*/
@@ -70,9 +69,7 @@ body {
   font-family: heebo;
 }
 
-/* Homepage Content */
-
-/* Homepage Banner */
+/* Homepage */
 
  .home-content {
      z-index: 500;
@@ -119,7 +116,7 @@ body {
      text-align: center;
  }
 
- /* Click to go down */
+ /* Click to go up/down */
 
  .down-arrow {
      z-index: 505;
@@ -128,13 +125,24 @@ body {
      width: 100%;
      text-align: center;
  }
-
  .down-arrow:hover {
      transform: translateY(20px);
      transition-duration: 3s;
  }
+ .up-arrow a{
+    z-index: 505;
+    position: fixed;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+}
+.up-arrow a:hover {
+    transform: translateY(-20px);
+    transition-duration: 3s;
+}
 
  /* About Me */
+
 .about-me {
     background-color: rgba(0,0,0,.3);
     position: fixed;
@@ -152,6 +160,7 @@ body {
      -ms-animation: fadein 4s;
      animation: fadein 4s;
  }
+
  @keyframes fadein {
      from {opacity: 0;}
      to {opacity: 1;}
@@ -172,7 +181,7 @@ body {
     from {opacity: 0;}
     to {opacity: 1;}
  }
-
+ 
  .title h1{
      color: #fff;
      text-align: center;
@@ -183,7 +192,6 @@ body {
      top: 150px;
      width: 100%;
  }
-
 .aboutme-content {
     list-style-type: none;
     padding:0;
@@ -193,7 +201,6 @@ body {
      -ms-animation: fadein 4s;
      animation: fadein 4s;
 }
-
  .aboutme-content li{
     background: url(/assets/img/bulletpointsm.png) no-repeat left top;
     margin-top: 10px;
@@ -202,6 +209,13 @@ body {
  }
 
  /* Resume */
+
+.resume {
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
 
  .top-line {
     width: 100%;
@@ -263,4 +277,46 @@ body {
     background-color:  rgba(255,255,255,.1);
 }
 
-/*@media queries - need on about me and contact page // remove name hover on home icon*/
+/* Contact */
+
+.contact {
+    width: 400px;
+    transform: translatey(230px);
+    margin: auto;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
+.submit-button {
+    transform: translatey(30px);
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 10%;
+    font-family: heebo;
+    padding: 10px;
+}
+.contact label {
+    display: none;
+}
+.message-input {
+    text-align:left ;
+}
+.form-field {
+    margin-top: 20px;
+    font-family: heebo;
+}
+
+
+#alert {
+    z-index: 3000;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    font-size: 10px;
+    color: #000;
+}
