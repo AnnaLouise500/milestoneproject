@@ -1,39 +1,45 @@
-/* VP 576px and less */
-
-@media screen and (max-width: 576px){
+/*Standard*/
 body {
-        background-image: url(/assets/img/mountains.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        width: 100%;
-        height: 800px;
-        z-index: 10;
-    } 
-#name {
-    display: none;
-}
-/* Navigation Bar*/
+    background-image: url(/assets/img/mountains.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    z-index: 10;
+} 
 .nav-bar {
     height: 80px;
     width: 100%;
     position:fixed;
     top: 0;
+    background-color: black;
+}
+.logo-image {
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+
+
+
+
+/* VP 576px and less */
+@media screen and (max-width: 576px){
+
+/* Navigation Bar*/
+#name {
+    display: none;
 }
 .nav-list {
     display:none;
 }
 
-.logo-image {
-    margin-top: 13px;
-    margin-left: 20px;
-}
+
 .sm-nav {
     height: 80px;
     z-index: 1;
     list-style-type: none;
-    background-color: black;
-    
 }
 
 .nav-link  {
@@ -44,7 +50,7 @@ body {
 .dropdown-menu {
     font-family: heebo;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: rgba(0,0,0,.5);
     width: 100%;
     margin-top: 20px;
@@ -53,7 +59,7 @@ body {
         
 }
 .dropdown-menu a {
-    margin: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
     font-size: 10px;
     color: #fff;
     width: 100%;
@@ -77,6 +83,248 @@ body {
 /* Homepage */
 
 .home-content {
+    z-index: 500;
+    display: inline-block;
+    position: fixed;
+    top: 20%;
+    width: 100%;
+
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: #fff;
+    font-family: heebo;
+    text-shadow: 2px 2px #000;
+    background-color: rgba(0,0,0,.3);
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-moz-keyframes fadein {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+@-webkit-keyframes fadein {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+@-ms-keyframes fadein {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+@-o-keyframes fadein {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+.home-content h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*About Me*/
+.about-me {
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    left: 8%;
+    top: 30%;
+    width: 85%;
+    color: #fff;
+    font-family: heebo;
+    padding: 10px;
+    font-size: 13px;
+    overflow: auto;
+
+}
+.title {
+    -webkit-animation: fadein 4s;
+     -moz-animation: fadein 4s;
+     -ms-animation: fadein 4s;
+     animation: fadein 4s;
+
+ }
+
+ @keyframes fadein {
+     from {opacity: 0;}
+     to {opacity: 1;}
+ }
+ @-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ @-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ @-ms-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ @-o-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ 
+ .title h1{
+     color: #fff;
+     text-align: center;
+     margin-bottom: 70px;
+     text-transform: uppercase;
+     font-weight: bold;
+     position: fixed;
+     top: 100px;
+     width: 100%;
+ }
+.aboutme-content {
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    -webkit-animation: fadein 4s;
+     -moz-animation: fadein 4s;
+     -ms-animation: fadein 4s;
+     animation: fadein 4s;
+     height: 230px;
+     
+}
+ .aboutme-content li{
+    margin-top: 10px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    
+ }
+ /* Resume */
+
+.resume {
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
+ .top-line {
+    width: 100%;
+    position: fixed;
+    top: 170px;
+ }
+ 
+ .bottom-line {
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 300px;
+ }
+ 
+.download {
+    height: 120px;
+    width: 250px ;
+    background-color: rgba(255,255,255,.3);
+    border: 2px solid #fff;
+    margin: auto;
+}
+.github {
+    height: 120px;
+    width: 250px ;
+    background-color: rgba(255,255,255,.3);
+    padding: 0;
+    margin: auto;
+    border: 2px solid #fff;
+}
+.resume-icons i{
+    font-size: 60px;
+    color:#495057;
+    position: fixed;
+    left: 41%;
+    margin-top: 25px;
+}
+.resume-headers {
+    display: none;
+}
+.github:hover .resume-icons i {
+    color: #fff;
+}
+.github:hover .resume-headers {
+    color: #fff;
+}
+.github:hover {
+    background-color:  rgba(255,255,255,.1);
+}
+.download:hover .resume-icons i{
+    color:#fff;
+}
+.download:hover .resume-headers {
+    color:#fff;
+}
+.download:hover {
+    background-color:  rgba(255,255,255,.1);
+}
+/* Contact */
+
+.contact {
+    transform: translatey(50px);
+    margin: auto;
+    position: fixed;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
+
+.submit-button {
+    margin-top: 20px ;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 10%;
+    font-family: heebo;
+    padding: 10px;
+}
+.contact label {
+    display: none;
+}
+.message-input {
+    text-align:left ;
+    height: 150px;
+    overflow: scroll;
+}
+.form-field {
+    margin-top: 15px;
+    font-family: heebo;
+}
+
+
+#alert {
+    z-index: 2000;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    font-size: 10px;
+    color: #000;
+}
+.up-arrow a{
+    z-index: 505;
+    position: fixed;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+}
+.up-arrow a:hover {
+    transform: translateY(-20px);
+    transition-duration: 3s;
+}
+}
+/* VP 576 - 768px */
+@media screen and (min-width:577px){
+   /* Homepage */
+
+ .home-content {
     z-index: 500;
     display: inline-block;
     position: fixed;
@@ -119,198 +367,8 @@ body {
     font-size: 50px;
     font-weight: 500;
     text-align: center;
+} 
 }
-
-/*About Me*/
-.about-me {
-    background-color: rgba(0,0,0,.3);
-    position: fixed;
-    left: 10%;
-    top: 28%;
-    width: 80%;
-    
-    color: #fff;
-    font-family: heebo;
-    padding: 10px;
-    font-size: 13px;
-
-}
-.title {
-    -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s;
-     -ms-animation: fadein 4s;
-     animation: fadein 4s;
- }
-
- @keyframes fadein {
-     from {opacity: 0;}
-     to {opacity: 1;}
- }
- @-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-ms-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-o-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- 
- .title h1{
-     color: #fff;
-     text-align: center;
-     margin-bottom: 70px;
-     text-transform: uppercase;
-     font-weight: bold;
-     position: fixed;
-     top: 150px;
-     width: 100%;
- }
-.aboutme-content {
-    list-style-type: none;
-    padding:0;
-    margin: 0;
-    -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s;
-     -ms-animation: fadein 4s;
-     animation: fadein 4s;
-}
- .aboutme-content li{
-    margin-top: 10px;
-    padding-left: 0px;
-    margin-bottom: 20px;
- }
- /* Resume */
-
-.resume {
-    -webkit-animation: fadein 4s;
-    -moz-animation: fadein 4s;
-    -ms-animation: fadein 4s;
-    animation: fadein 4s;
-}
-
- .top-line {
-    width: 100%;
-    position: fixed;
-    top: 230px;
- }
- 
- .bottom-line {
-    width: 100%;
-    height: 150px;
-    position: fixed;
-    top: 430px;
- }
- 
-.download {
-    height: 150px;
-    width: 300px ;
-    background-color: rgba(255,255,255,.3);
-    border: 2px solid #fff;
-    margin: auto;
-}
-.github {
-    height: 150px;
-    width: 300px ;
-    background-color: rgba(255,255,255,.3);
-    padding: 0;
-    margin: auto;
-    border: 2px solid #fff;
-}
-.resume-icons i{
-    font-size: 50px;
-    color:#495057;
-    position: relative;
-    left: 125px;
-}
-.resume-headers {
-    font-size: 30px;
-    color:#495057;
-    font-family: heebo;
-    text-align: center;
-    margin-top: 25px;
-}
-.github:hover .resume-icons i {
-    color: #fff;
-}
-.github:hover .resume-headers {
-    color: #fff;
-}
-.github:hover {
-    background-color:  rgba(255,255,255,.1);
-}
-.download:hover .resume-icons i{
-    color:#fff;
-}
-.download:hover .resume-headers {
-    color:#fff;
-}
-.download:hover {
-    background-color:  rgba(255,255,255,.1);
-}
-/* Contact */
-
-.contact {
-    width: 300px;
-    transform: translatey(130px);
-    margin: auto;
-    -webkit-animation: fadein 4s;
-    -moz-animation: fadein 4s;
-    -ms-animation: fadein 4s;
-    animation: fadein 4s;
-}
-.submit-button {
-    transform: translatey(30px);
-    position: fixed;
-    width: 100%;
-    color: #fff;
-    background-color:rgba(0,0,0,0.3);
-    border-radius: 10%;
-    font-family: heebo;
-    padding: 10px;
-}
-.contact label {
-    display: none;
-}
-.message-input {
-    text-align:left ;
-}
-.form-field {
-    margin-top: 20px;
-    font-family: heebo;
-}
-
-
-#alert {
-    z-index: 2000;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-    height: 35px;
-    font-size: 10px;
-    color: #000;
-}
-.up-arrow a{
-    z-index: 505;
-    position: fixed;
-    top: 80%;
-    width: 100%;
-    text-align: center;
-}
-.up-arrow a:hover {
-    transform: translateY(-20px);
-    transition-duration: 3s;
-}
-}
-
 /* VP 768px and over */
 @media screen and (min-width:768px){
 
@@ -326,13 +384,7 @@ body {
     opacity: 0;
     transition: opacity 1s;
 }
-.logo:hover #name {
-  display: block;
-  opacity: 1;
-}
-.logo-image:hover {
-    border: 1px solid rgb(7, 4, 4);
-}
+
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -443,10 +495,214 @@ body {
     color: rgba(196, 196, 196) ;
 }
 
-.logo-image {
-    margin-top: 13px;
-    margin-left: 20px;
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: #fff;
+  font-family: heebo;
 }
+/* Click to go up/down */
+
+.down-arrow {
+    z-index: 505;
+    position: fixed;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+}
+.down-arrow:hover {
+    transform: translateY(20px);
+    transition-duration: 3s;
+}
+.up-arrow a{
+   z-index: 505;
+   position: fixed;
+   top: 80%;
+   width: 100%;
+   text-align: center;
+}
+.up-arrow a:hover {
+   transform: translateY(-20px);
+   transition-duration: 3s;
+}
+/* About Me */
+
+.about-me {
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    left: 10%;
+    top: 220px;
+    width: 80%;
+    color: #fff;
+    font-family: heebo;
+    padding: 30px;
+    
+}
+.title {
+    -webkit-animation: fadein 4s;
+     -moz-animation: fadein 4s;
+     -ms-animation: fadein 4s;
+     animation: fadein 4s;
+ }
+
+ @keyframes fadein {
+     from {opacity: 0;}
+     to {opacity: 1;}
+ }
+ @-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ @-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ @-ms-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ @-o-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+ 
+ .title h1{
+     color: #fff;
+     text-align: center;
+     margin-bottom: 70px;
+     text-transform: uppercase;
+     font-weight: bold;
+     position: fixed;
+     top: 140px;
+     width: 100%;
+ }
+.aboutme-content {
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    -webkit-animation: fadein 4s;
+     -moz-animation: fadein 4s;
+     -ms-animation: fadein 4s;
+     animation: fadein 4s;
+}
+ .aboutme-content li{
+    background: url(/assets/img/bulletpointsm.png) no-repeat left top;
+    margin-top: 10px;
+    padding-left: 70px;
+    margin-bottom: 20px;
+ }
+ /* Resume */
+
+.resume {
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
+
+ .top-line {
+    width: 100%;
+    position: fixed;
+    top: 230px;
+ }
+ 
+ .bottom-line {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 430px;
+ }
+ 
+.download {
+    height: 150px;
+    width: 300px ;
+    background-color: rgba(255,255,255,.3);
+    border: 2px solid #fff;
+    margin: auto;
+}
+.github {
+    height: 150px;
+    width: 300px ;
+    background-color: rgba(255,255,255,.3);
+    padding: 0;
+    margin: auto;
+    border: 2px solid #fff;
+}
+.resume-icons i{
+    font-size: 50px;
+    color:#495057;
+    position: relative;
+    left: 125px;
+}
+.resume-headers {
+    font-size: 30px;
+    color:#495057;
+    font-family: heebo;
+    text-align: center;
+    margin-top: 25px;
+}
+.github:hover .resume-icons i {
+    color: #fff;
+}
+.github:hover .resume-headers {
+    color: #fff;
+}
+.github:hover {
+    background-color:  rgba(255,255,255,.1);
+}
+.download:hover .resume-icons i{
+    color:#fff;
+}
+.download:hover .resume-headers {
+    color:#fff;
+}
+.download:hover {
+    background-color:  rgba(255,255,255,.1);
+}
+
+/* Contact */
+
+.contact {
+    width: 400px;
+    transform: translatey(230px);
+    margin: auto;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    animation: fadein 4s;
+}
+.submit-button {
+    transform: translatey(30px);
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 10%;
+    font-family: heebo;
+    padding: 10px;
+}
+.contact label {
+    display: none;
+}
+.message-input {
+    text-align:left ;
+}
+.form-field {
+    margin-top: 20px;
+    font-family: heebo;
+}
+#alert {
+    z-index: 3000;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    font-size: 10px;
+    color: #000;
+}
+
 @media screen and (min-width:768px){
 
 #name {
@@ -467,9 +723,7 @@ body {
   display: block;
   opacity: 1;
 }
-.logo-image:hover {
-    border: 1px solid rgb(7, 4, 4);
-}
+
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -699,7 +953,7 @@ body {
 }
 .submit-button {
     transform: translatey(30px);
-    position: fixed;
+    position: relative;
     width: 100%;
     color: #fff;
     background-color:rgba(0,0,0,0.3);
@@ -769,10 +1023,7 @@ body {
     color: rgba(196, 196, 196) ;
 }
 
-.logo-image {
-    margin-top: 13px;
-    margin-left: 20px;
-}
+
 @media screen and (min-width:768px){
 
 #name {
@@ -793,9 +1044,7 @@ body {
   display: block;
   opacity: 1;
 }
-.logo-image:hover {
-    border: 1px solid rgb(7, 4, 4);
-}
+
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -1025,7 +1274,7 @@ body {
 }
 .submit-button {
     transform: translatey(30px);
-    position: fixed;
+    position: relative;
     width: 100%;
     color: #fff;
     background-color:rgba(0,0,0,0.3);
