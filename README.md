@@ -61,6 +61,7 @@ Web: https://xd.adobe.com/view/24219cf0-f92c-47b9-402c-f6822414ed68-5210/?fullsc
   <li>I plan on hosting this site via 123-reg.co.uk to URL: www.annamorrison.co.uk</li>
   <li>All changes and amendments will be completed via VS Code, uploaded to GitHub and then pushed to my hosting provider.</li>
   <li>Version control will always be maintained via GitHub.</li>
+  <li>A few changes were made from the wireframes to the deployed UX. I removed the navigation arrow buttons from the bottom of the screen to ensure smaller viewports (iPhone 5) could utilise the available space better. I also removed the alert bar from the contact page as it's self explanatory why the form wouldn't submit as we have yet to cover Python or .php.</li>
 </ul>
 
 ## Credits
