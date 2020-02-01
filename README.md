@@ -44,6 +44,7 @@ Web: https://xd.adobe.com/view/24219cf0-f92c-47b9-402c-f6822414ed68-5210/?fullsc
   <li> I want to be able to complete my contact me page with Python to enable form submission </li>
   <li> I may merge all seperate pages into one, scrollable page </li>
   <li> I want to create a blog page which details where I have been working, what I have been working on and any ideas which I wish to develop further and why </li>
+  <li> During the next "sprint" I would have created the @media queries for horizontal viewing on mobile devices </li>
 </ul>
 
 ## Testing
