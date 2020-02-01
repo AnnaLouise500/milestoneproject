@@ -20,12 +20,8 @@ body {
     margin-top: 13px;
     margin-left: 20px;
 }
- 
-
-
 
 /* VP 576px and less */
-
 @media screen and (max-width: 576px){
 
 /* Navigation Bar >576*/
@@ -68,7 +64,6 @@ body {
 }
 
 /* Homepage >576 */
-
 .home-content {
     z-index: 500;
     display: inline-block;
@@ -109,7 +104,6 @@ body {
 }
 
 /*About Me >576*/
-
 .about-me {
     background-color: rgba(0,0,0,.3);
     position: fixed;
@@ -173,8 +167,8 @@ body {
     padding-left: 0px;
     margin-bottom: 20px;
  }
+ 
  /* Resume >576 */
-
 .resume {
     -webkit-animation: fadein 4s;
     -moz-animation: fadein 4s;
@@ -186,14 +180,12 @@ body {
     position: fixed;
     top: 190px;
  }
- 
  .bottom-line {
     width: 100%;
     height: 130px;
     position: fixed;
     top: 340px;
  }
- 
 .download {
     height: 120px;
     width: 250px ;
@@ -209,7 +201,7 @@ body {
     margin: auto;
     border: 2px solid #fff;
 }
-.resume-icons i{
+.resume-icons i {
     font-size: 60px;
     color:#495057;
     position: fixed;
@@ -237,8 +229,8 @@ body {
 .download:hover {
     background-color:  rgba(255,255,255,.1);
 }
-/* Contact >576*/
 
+/* Contact >576*/
 .contact {
     transform: translatey(50px);
     margin: auto;
@@ -270,24 +262,10 @@ body {
     margin-top: 25px;
     font-family: heebo;
 }
-
-.up-arrow a{
-    z-index: 505;
-    position: fixed;
-    top: 80%;
-    width: 100%;
-    text-align: center;
-}
-.up-arrow a:hover {
-    transform: translateY(-20px);
-    transition-duration: 3s;
-}
 }
 
-/* VP 576 - 768px */
-@media screen and (min-width:577px){
-   /* Homepage */
-
+@media screen and (min-width: 577px) {
+ /* Homepage 577px and above*/
  .home-content {
     z-index: 500;
     display: inline-block;
@@ -326,114 +304,13 @@ body {
    from {opacity: 0;}
    to {opacity: 1;}
 }
-
 .home-content h2 {
     font-size: 50px;
     font-weight: 500;
     text-align: center;
 } 
-}
-/* VP 768px and over */
-@media screen and (min-width:768px){
 
-#name {
-    color: #fff;
-    height: 30px;
-    position: fixed;
-    top: 13px;
-    left: 130px;
-    margin-left: 20px;
-    font-family: heebo;
-    font-size: 40px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #000;
-  background-color: #fff;
-  font-family: heebo;
-}
-
-/* Homepage */
-
- .home-content {
-     z-index: 500;
-     display: inline-block;
-     position: fixed;
-     top: 20%;
-     width: 100%;
-     height: 200px;
-     text-align: center;
-     padding-top: 35px;
-     color: #fff;
-     font-family: heebo;
-     text-shadow: 2px 2px #000;
-     background-color: rgba(0,0,0,.3);
-     -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s;
-     -ms-animation: fadein 4s;
-     animation: fadein 4s;
- }
- @keyframes fadein {
-     from {opacity: 0;}
-     to {opacity: 1;}
- }
- @-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-ms-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-o-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
-
- .home-content h2 {
-     font-size: 50px;
-     font-weight: 500;
-     text-align: center;
- }
-}
-
-
-@media screen and (min-width: 576px) {
-    
-    body {
-        background-image: url(/assets/img/mountains.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        width: 100%;
-        height: 800px;
-        z-index: 10;
-    }
-    
-    #name {
-        display: none;
-    }
-    /* Body */
-body {
-    background-image: url(/assets/img/mountains.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 800px;
-    z-index: 10;
-}
-
-/* Navigation Bar*/
-
+/* Navigation Bar 577px and above*/
 .nav-bar {
     background-color: black;
     height: 80px;
@@ -454,12 +331,12 @@ body {
 .nav-list a {
     color: #fff;;
 }
-
 .nav-link:hover{
     color: rgba(196, 196, 196) ;
 }
-
-
+#name {
+    display: none;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #000;
@@ -467,8 +344,7 @@ body {
   font-family: heebo;
 }
 
-/* About Me */
-
+/* About Me 577px and above*/
 .about-me {
     background-color: rgba(0,0,0,.3);
     position: fixed;
@@ -478,7 +354,6 @@ body {
     color: #fff;
     font-family: heebo;
     padding: 30px;
-    
 }
 .title {
     -webkit-animation: fadein 4s;
@@ -533,28 +408,25 @@ body {
     padding-left: 70px;
     margin-bottom: 20px;
  }
- /* Resume */
 
+ /* Resume 577px and above*/
 .resume {
     -webkit-animation: fadein 4s;
     -moz-animation: fadein 4s;
     -ms-animation: fadein 4s;
     animation: fadein 4s;
 }
-
  .top-line {
     width: 100%;
     position: fixed;
     top: 230px;
  }
- 
  .bottom-line {
     width: 100%;
     height: 150px;
     position: fixed;
     top: 430px;
  }
- 
 .download {
     height: 150px;
     width: 300px ;
@@ -602,8 +474,7 @@ body {
     background-color:  rgba(255,255,255,.1);
 }
 
-/* Contact */
-
+/* Contact 577px and above*/
 .contact {
     width: 400px;
     transform: translatey(230px);
@@ -643,38 +514,11 @@ body {
     font-size: 10px;
     color: #000;
 }
+}
 
+/*VP 768px and above*/
 @media screen and (min-width:768px){
-
-#name {
-    color: #fff;
-    height: 30px;
-    position: fixed;
-    top: 13px;
-    left: 130px;
-    margin-left: 20px;
-    font-family: heebo;
-    font-size: 40px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-
-.logo:hover #name {
-  display: block;
-  opacity: 1;
-}
-
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #000;
-  background-color: #fff;
-  font-family: heebo;
-}
-
 /* Homepage */
-
  .home-content {
      z-index: 500;
      display: inline-block;
@@ -713,236 +557,13 @@ body {
     from {opacity: 0;}
     to {opacity: 1;}
  }
-
  .home-content h2 {
      font-size: 50px;
      font-weight: 500;
      text-align: center;
  }
-
- /* About Me */
-
-.about-me {
-    background-color: rgba(0,0,0,.3);
-    position: fixed;
-    left: 17%;
-    top: 250px;
-    width: 65%;
-    color: #fff;
-    font-family: heebo;
-    padding: 30px;
-    
-}
-.title {
-    -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s;
-     -ms-animation: fadein 4s;
-     animation: fadein 4s;
- }
-
- @keyframes fadein {
-     from {opacity: 0;}
-     to {opacity: 1;}
- }
- @-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-ms-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-o-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- 
- .title h1{
-     color: #fff;
-     text-align: center;
-     margin-bottom: 70px;
-     text-transform: uppercase;
-     font-weight: bold;
-     position: fixed;
-     top: 150px;
-     width: 100%;
- }
-.aboutme-content {
-    list-style-type: none;
-    padding:0;
-    margin: 0;
-    -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s;
-     -ms-animation: fadein 4s;
-     animation: fadein 4s;
-}
- .aboutme-content li{
-    background: url(/assets/img/bulletpointsm.png) no-repeat left top;
-    margin-top: 10px;
-    padding-left: 70px;
-    margin-bottom: 20px;
- }
-
- /* Resume */
-
-.resume {
-    -webkit-animation: fadein 4s;
-    -moz-animation: fadein 4s;
-    -ms-animation: fadein 4s;
-    animation: fadein 4s;
-}
-
- .top-line {
-    width: 100%;
-    position: fixed;
-    top: 280px;
- }
- 
- .bottom-line {
-    width: 100%;
-    height: 150px;
-    position: fixed;
-    top: 480px;
- }
- 
-.download {
-    height: 150px;
-    width: 300px ;
-    background-color: rgba(255,255,255,.3);
-    border: 2px solid #fff;
-    margin: auto;
-}
-.github {
-    height: 150px;
-    width: 300px ;
-    background-color: rgba(255,255,255,.3);
-    padding: 0;
-    margin: auto;
-    border: 2px solid #fff;
-}
-.resume-icons i{
-    font-size: 50px;
-    color:#495057;
-    position: relative;
-    left: 125px;
-}
-.resume-headers {
-    font-size: 30px;
-    color:#495057;
-    font-family: heebo;
-    text-align: center;
-    margin-top: 25px;
-}
-.github:hover .resume-icons i {
-    color: #fff;
-}
-.github:hover .resume-headers {
-    color: #fff;
-}
-.github:hover {
-    background-color:  rgba(255,255,255,.1);
-}
-.download:hover .resume-icons i{
-    color:#fff;
-}
-.download:hover .resume-headers {
-    color:#fff;
-}
-.download:hover {
-    background-color:  rgba(255,255,255,.1);
-}
-
-/* Contact */
-
-.contact {
-    width: 400px;
-    transform: translatey(230px);
-    margin: auto;
-    -webkit-animation: fadein 4s;
-    -moz-animation: fadein 4s;
-    -ms-animation: fadein 4s;
-    animation: fadein 4s;
-}
-.submit-button {
-    transform: translatey(30px);
-    position: relative;
-    width: 100%;
-    color: #fff;
-    background-color:rgba(0,0,0,0.3);
-    border-radius: 10%;
-    font-family: heebo;
-    padding: 10px;
-}
-.contact label {
-    display: none;
-}
-.message-input {
-    text-align:left ;
-}
-.form-field {
-    margin-top: 20px;
-    font-family: heebo;
-}
-
-
-#alert {
-    z-index: 3000;
-    position: fixed;
-    top: 80px;
-    width: 100%;
-    text-align: center;
-    height: 35px;
-    font-size: 10px;
-    color: #000;
-}
-}
-
-/* Body */
-body {
-    background-image: url(/assets/img/mountains.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 800px;
-    z-index: 10;
-}
-
-/* Navigation Bar*/
-
-.nav-bar {
-    background-color: black;
-    height: 80px;
-    display: inline-block;
-    width: 100%;
-    z-index: 100;
-    position:fixed;
-    top: 0;
-}
-.nav-list {
-    list-style-type: none;
-    float: right;
-    margin-left: 10px;
-    margin-right: 45px;
-    margin-top: 20px;
-    font-family: heebo;
-}
-.nav-list a {
-    color: #fff;;
-}
-
-.nav-link:hover{
-    color: rgba(196, 196, 196) ;
-}
-
-
-@media screen and (min-width:768px){
-
-#name {
+ /* Navigation Bar 768px and above*/
+ #name {
     color: #fff;
     height: 30px;
     position: fixed;
@@ -954,69 +575,17 @@ body {
     opacity: 0;
     transition: opacity 1s;
 }
-
-
 .logo:hover #name {
   display: block;
   opacity: 1;
 }
-
-
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #000;
   background-color: #fff;
   font-family: heebo;
 }
-
-/* Homepage */
-
- .home-content {
-     z-index: 500;
-     display: inline-block;
-     position: fixed;
-     top: 20%;
-     width: 100%;
-     height: 200px;
-     text-align: center;
-     padding-top: 35px;
-     color: #fff;
-     font-family: heebo;
-     text-shadow: 2px 2px #000;
-     background-color: rgba(0,0,0,.3);
-     -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s;
-     -ms-animation: fadein 4s;
-     animation: fadein 4s;
- }
- @keyframes fadein {
-     from {opacity: 0;}
-     to {opacity: 1;}
- }
- @-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-ms-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
- @-o-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
- }
-
- .home-content h2 {
-     font-size: 50px;
-     font-weight: 500;
-     text-align: center;
- }
-
- /* About Me */
+ /* About Me 768px and above*/
 
 .about-me {
     background-color: rgba(0,0,0,.3);
@@ -1082,28 +651,24 @@ body {
     margin-bottom: 20px;
  }
 
- /* Resume */
-
+ /* Resume 768px and above*/
 .resume {
     -webkit-animation: fadein 4s;
     -moz-animation: fadein 4s;
     -ms-animation: fadein 4s;
     animation: fadein 4s;
 }
-
  .top-line {
     width: 100%;
     position: fixed;
     top: 280px;
  }
- 
  .bottom-line {
     width: 100%;
     height: 150px;
     position: fixed;
     top: 480px;
  }
- 
 .download {
     height: 150px;
     width: 300px ;
@@ -1151,8 +716,7 @@ body {
     background-color:  rgba(255,255,255,.1);
 }
 
-/* Contact */
-
+/* Contact 768px and above*/
 .contact {
     width: 400px;
     transform: translatey(230px);
@@ -1181,16 +745,5 @@ body {
 .form-field {
     margin-top: 20px;
     font-family: heebo;
-}
-#alert {
-    z-index: 3000;
-    position: fixed;
-    top: 80px;
-    width: 100%;
-    text-align: center;
-    height: 35px;
-    font-size: 10px;
-    color: #000;
-}
 }
 }
