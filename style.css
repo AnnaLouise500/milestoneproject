@@ -8,6 +8,7 @@ body {
     height: 800px;
     z-index: 10;
 } 
+/*Nav*/
 .nav-bar {
     height: 80px;
     width: 100%;
@@ -19,29 +20,26 @@ body {
     margin-top: 13px;
     margin-left: 20px;
 }
-
-
+ 
 
 
 
 /* VP 576px and less */
+
 @media screen and (max-width: 576px){
 
-/* Navigation Bar*/
+/* Navigation Bar >576*/
 #name {
     display: none;
 }
 .nav-list {
     display:none;
 }
-
-
 .sm-nav {
     height: 80px;
     z-index: 1;
     list-style-type: none;
 }
-
 .nav-link  {
     position: fixed;
     right: 20px;
@@ -56,7 +54,6 @@ body {
     margin-top: 20px;
     z-index:3000;
     margin-right: 5%;
-        
 }
 .dropdown-menu a {
     margin: 5px 0px 5px 0px;
@@ -69,18 +66,8 @@ body {
 .dropdown-menu a:hover {
     color:#495057 ;
 }
-.down-arrow {
-    z-index: 505;
-    position: fixed;
-    top: 80%;
-    width: 100%;
-    text-align: center;
-}
-.down-arrow:hover {
-    transform: translateY(20px);
-    transition-duration: 3s;
-}
-/* Homepage */
+
+/* Homepage >576 */
 
 .home-content {
     z-index: 500;
@@ -88,7 +75,6 @@ body {
     position: fixed;
     top: 20%;
     width: 100%;
-
     text-align: center;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -122,32 +108,24 @@ body {
    to {opacity: 1;}
 }
 
-.home-content h2 {
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-}
+/*About Me >576*/
 
-/*About Me*/
 .about-me {
     background-color: rgba(0,0,0,.3);
     position: fixed;
-    left: 8%;
-    top: 30%;
+    left: 7%;
+    top: 160px;
     width: 85%;
     color: #fff;
     font-family: heebo;
+    font-size: 12px;
     padding: 10px;
-    font-size: 13px;
-    overflow: auto;
-
 }
 .title {
     -webkit-animation: fadein 4s;
      -moz-animation: fadein 4s;
      -ms-animation: fadein 4s;
      animation: fadein 4s;
-
  }
 
  @keyframes fadein {
@@ -170,7 +148,6 @@ body {
     from {opacity: 0;}
     to {opacity: 1;}
  }
- 
  .title h1{
      color: #fff;
      text-align: center;
@@ -189,16 +166,14 @@ body {
      -moz-animation: fadein 4s;
      -ms-animation: fadein 4s;
      animation: fadein 4s;
-     height: 230px;
-     
+     height: 100%;
 }
  .aboutme-content li{
     margin-top: 10px;
     padding-left: 0px;
     margin-bottom: 20px;
-    
  }
- /* Resume */
+ /* Resume >576 */
 
 .resume {
     -webkit-animation: fadein 4s;
@@ -209,14 +184,14 @@ body {
  .top-line {
     width: 100%;
     position: fixed;
-    top: 170px;
+    top: 190px;
  }
  
  .bottom-line {
     width: 100%;
     height: 130px;
     position: fixed;
-    top: 300px;
+    top: 340px;
  }
  
 .download {
@@ -262,7 +237,7 @@ body {
 .download:hover {
     background-color:  rgba(255,255,255,.1);
 }
-/* Contact */
+/* Contact >576*/
 
 .contact {
     transform: translatey(50px);
@@ -273,7 +248,6 @@ body {
     -ms-animation: fadein 4s;
     animation: fadein 4s;
 }
-
 .submit-button {
     margin-top: 20px ;
     position: relative;
@@ -293,21 +267,10 @@ body {
     overflow: scroll;
 }
 .form-field {
-    margin-top: 15px;
+    margin-top: 25px;
     font-family: heebo;
 }
 
-
-#alert {
-    z-index: 2000;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-    height: 35px;
-    font-size: 10px;
-    color: #000;
-}
 .up-arrow a{
     z-index: 505;
     position: fixed;
@@ -320,6 +283,7 @@ body {
     transition-duration: 3s;
 }
 }
+
 /* VP 576 - 768px */
 @media screen and (min-width:577px){
    /* Homepage */
@@ -502,30 +466,7 @@ body {
   background-color: #fff;
   font-family: heebo;
 }
-/* Click to go up/down */
 
-.down-arrow {
-    z-index: 505;
-    position: fixed;
-    top: 80%;
-    width: 100%;
-    text-align: center;
-}
-.down-arrow:hover {
-    transform: translateY(20px);
-    transition-duration: 3s;
-}
-.up-arrow a{
-   z-index: 505;
-   position: fixed;
-   top: 80%;
-   width: 100%;
-   text-align: center;
-}
-.up-arrow a:hover {
-   transform: translateY(-20px);
-   transition-duration: 3s;
-}
 /* About Me */
 
 .about-me {
@@ -778,31 +719,6 @@ body {
      font-weight: 500;
      text-align: center;
  }
-
- /* Click to go up/down */
-
- .down-arrow {
-     z-index: 505;
-     position: fixed;
-     top: 80%;
-     width: 100%;
-     text-align: center;
- }
- .down-arrow:hover {
-     transform: translateY(20px);
-     transition-duration: 3s;
- }
- .up-arrow a{
-    z-index: 505;
-    position: fixed;
-    top: 80%;
-    width: 100%;
-    text-align: center;
-}
-.up-arrow a:hover {
-    transform: translateY(-20px);
-    transition-duration: 3s;
-}
 
  /* About Me */
 
@@ -1100,31 +1016,6 @@ body {
      text-align: center;
  }
 
- /* Click to go up/down */
-
- .down-arrow {
-     z-index: 505;
-     position: fixed;
-     top: 80%;
-     width: 100%;
-     text-align: center;
- }
- .down-arrow:hover {
-     transform: translateY(20px);
-     transition-duration: 3s;
- }
- .up-arrow a{
-    z-index: 505;
-    position: fixed;
-    top: 80%;
-    width: 100%;
-    text-align: center;
-}
-.up-arrow a:hover {
-    transform: translateY(-20px);
-    transition-duration: 3s;
-}
-
  /* About Me */
 
 .about-me {
@@ -1136,7 +1027,6 @@ body {
     color: #fff;
     font-family: heebo;
     padding: 30px;
-    
 }
 .title {
     -webkit-animation: fadein 4s;
@@ -1292,8 +1182,6 @@ body {
     margin-top: 20px;
     font-family: heebo;
 }
-
-
 #alert {
     z-index: 3000;
     position: fixed;
@@ -1303,5 +1191,6 @@ body {
     height: 35px;
     font-size: 10px;
     color: #000;
+}
 }
 }
